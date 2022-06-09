@@ -1,4 +1,5 @@
 import { useState } from "react";
+import agent from "../../app/api/agent";
 import SearchComponent from "../search/SearchComponent";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
 
   const handleSearch = (searchTerm: string) => {
     console.log(searchTerm);
+    agent.Twitter.list();
   };
 
   return (
