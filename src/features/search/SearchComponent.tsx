@@ -11,7 +11,7 @@ const SearchComponent = ({ handleSearch }: Props) => {
   return (<>
     <input
       type='text'
-      value={searchTerm ?? ''} 
+      value={searchTerm ?? ''}
       onChange={(e) => setSearchTerm(e.target.value)}
     />
     <button onClick={() => handleSearch(searchTerm)}>Search</button>
