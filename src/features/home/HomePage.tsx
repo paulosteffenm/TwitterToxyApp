@@ -1,8 +1,17 @@
+import { useState } from "react";
+import SearchComponent from "../search/SearchComponent";
+
 const HomePage = () => {
+
+  const [list, setList] = useState<Array<string>>([]);
+
+  const handleSearch = (searchTerm: string) => {
+    console.log(searchTerm);
+  };
+
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>This is the home page</p>
+      <SearchComponent handleSearch={handleSearch}/>
     </div>
   );
 };
