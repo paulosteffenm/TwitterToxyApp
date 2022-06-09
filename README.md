@@ -6,7 +6,7 @@
 npm i
 ```
 
-## run
+## Run
 
 ```bash
 npm run start
