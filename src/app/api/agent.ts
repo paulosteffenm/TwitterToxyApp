@@ -4,7 +4,6 @@ axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 const config = {
   headers: {
     Accept: 'application/json',
-    Authorization: `Bearer ${process.env.REACT_APP_AUTHORIZATION}`
   },
 };
 
@@ -15,7 +14,7 @@ const requests = {
 };
 
 const Twitter = {
-  list: () => requests.get<Array<any>>('/search/recent?query=from:twitterdev'),
+  list: () => requests.get<Array<any>>('/'),
 };
 
 const agent = {
