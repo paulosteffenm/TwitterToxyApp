@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { RootObject } from '../interfaces/RootObject';
+import { Tweets } from '../interfaces/Tweets';
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 const config = {
@@ -15,7 +15,7 @@ const requests = {
 };
 
 const Twitter = {
-  list: (query: string) => requests.get<RootObject>(query),
+  list: (query: string) => requests.get<Tweets>(`/api?query=${query}`),
 };
 
 const agent = {
