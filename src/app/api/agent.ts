@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { Tweets } from '../interfaces/Tweets';
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
+axios.defaults.timeout = 0;
 const config = {
   headers: {
     Accept: 'application/json',

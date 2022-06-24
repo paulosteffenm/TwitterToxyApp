@@ -4,6 +4,7 @@ import BrandComponent from "../../components/brand/BrandComponent";
 import SearchComponent from "../../components/search/SearchComponent";
 import { Tweet } from "../../interfaces/Tweets";
 import agent from "../../api/agent";
+import TweetsList from "../../components/tweets/TweetsList";
 
 const HomePage = () => {
 
@@ -19,7 +20,7 @@ const HomePage = () => {
     <div className='container'>
       <BrandComponent />
       <SearchComponent handleSearch={handleSearch} />
-      {tweets.length !== 0 && tweets.map((tweet) => <p className='text-white' key={tweet.id}>{tweet?.text}</p>)}
+      {tweets.length !== 0 && <TweetsList tweets={tweets} />}
     </div>
 
   </>
