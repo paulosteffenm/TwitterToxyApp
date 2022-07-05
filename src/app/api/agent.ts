@@ -17,6 +17,7 @@ const requests = {
 
 const Twitter = {
   list: (query: string) => requests.get<Tweets>(`/api?query=${query}`),
+  lucky: () => requests.get<Tweets>('/lucky'),
 };
 
 const agent = {

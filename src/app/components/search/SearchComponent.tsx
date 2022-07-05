@@ -21,7 +21,7 @@ const SearchComponent = ({ handleSearch }: Props) => {
       </div>
       <div className='mt-2'>
         <button className='btn btn-dark me-2' onClick={() => handleSearch(searchTerm)}>Search</button>
-        <button className='btn btn-dark'>Lucky</button>
+        <button className='btn btn-dark' onClick={() => handleSearch('feeling_lucky')}>Lucky</button>
       </div>
     </div>
   );
