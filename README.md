@@ -2,6 +2,8 @@
 
 ## TL;DR
 
+![image](https://user-images.githubusercontent.com/55364610/177667159-85df5134-9a74-48a2-a12e-93648ed9facd.png)
+
 ## About
 
 This was the final project of the AI learning taught by [Ricardo Westhauser](https://github.com/rswesthauser).
